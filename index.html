@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My website</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<header>
+	<div id="masthead">
+		<h1>  •  Anna Sago  • </h1>
+		<div id="barmenu" onclick="toggleMenu()">&#9776;</div>
+	</div>
+	<h2 id="aboutme">Journalist • Prospective Law Student</h2>
+	<nav class="navbar">
+		<ul id="pages">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="articles.html">Articles</a></li>
+			<li><a href="codingprojects.html">Coding Projects</a></li>
+			<li><a href="resume.html">Resume</a></li>
+			<li><a href="otherexperience.html">Other Experience</a></li>
+		  <li><a href="contact.html">Contact</a></li>
+
+		</ul>
+	</nav>
+</header>
+<div id="contentarea">
+<main>
+	<div id="bioandpic">
+		<img src="headshot copy.jpeg" alt="Headshot of Anna Sago" id="headshot">
+		<div id="biotext">
+		<p id="textone">
+			Hi! I'm Anna, a journalist and current graduate student at the University of Missouri, as well as a law school applicant.
+		</p>
+		<p id="hideonmobile">
+		Check out some of my selected favorite work below, and click the tabs above to see the full pieces.
+	</p>
+	</div>
+	</div>
+
+	<section class="homefeatures">
+		<div class="workfeat">
+
+	<h3 class="slider1title">Selected Pieces</h3>
+    <section class="Slider">
+    	<figure class ="slide">
+        <img id="slider-img" src="toson.jpeg" alt="toson" srcset="">
+        <figcaption id="slider-caption"> I was put in touch with Syreta Toson, a formerly incarcerated woman, by another member of the community who expressed an interest in sharing her story and more information about the PATCH program. I chatted with Syreta, her son, Isiah, and Barb Burton, the director of PATCH, about the relationship the Tosons were able to build through the PATCH program.</figcaption>
+      </figure>
+    </section>
+  </div>
+
+  <figure class="resumefeat">
+  	<img id="resume" src="resume.jpeg" alt="My resume. For a screen-reader accessible version, please navigate to the resume tab.">
+  </figure>
+</section>
+
+
+
+	
+
+
+</main>
+</div>
+
+<footer>
+	<p class="footer">Website by Anna Sago</p>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("pages");
+  const btn  = document.getElementById('barmenu');
+  menu.classList.toggle("show");
+  document.getElementById('barmenu').addEventListener('click', toggleMenu);
+}
+</script>

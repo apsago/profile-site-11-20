@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<header>
+	<div id="masthead">
+		<h1 style="text-align: center; font-family: Garamond, serif; font-style: italic; font-size: 50px">  •  Anna Sago  • </h1>
+		<div id="barmenu" onclick="toggleMenu()">&#9776;</div>
+	</div>
+	<h2 id="aboutme">Journalist • Prospective Law Student</h2>
+	<nav class="navbar">
+		<ul id="pages">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="articles.html">Articles</a></li>
+			<li><a href="codingprojects.html">Coding Projects</a></li>
+			<li><a href="resume.html">Resume</a></li>
+			<li><a href="otherexperience.html">Other Experience</a></li>
+
+		</ul>
+	</nav>
+</header>
+<div id="contentarea">
+<main>
+
+	</div>
+	
+<img src="resume.jpeg" alt="Anna Sago's resume. LSAC Number L46009120.
+
+Education: 
+Master of Arts, University of Missouri– Columbia, Expected 2026 4.0/4.0 GPA
+Master's Thesis: “Information seeking, rumors and credibility in a crisis: how fact-checks influence long-term credibility perceptions” Columbia, MO
+
+Bachelor of Journalism, University of Missouri– Columbia, 2021-2025 3.97/4.0 GPA, Kappa Tau Alpha honor society (top 10% of a class of 494) Columbia, MO
+
+Work Experience:
+Investigative Reporters and Editors Graduate Research Assistant  Columbia, MO (August 2025 – Present), 20 hours/week
+Assist news organizations in organizing and analyzing data; prepare cost estimates and use agreements.
+
+
+University of Missouri Writing Center Columbia, MO
+Writing Tutor (January 2023 – Present), 4-8 hours/week
+Assisted 351 unique students on written work, including personal statements and essays; mentored two trainee tutors.
+
+Minnesota Star Tribune, Minneapolis, MN
+Breaking and Trending News Intern (Summer 2025), 40 hours/week
+Covered breaking and trending news in the state of Minnesota, generating 65k site visits.
+
+Columbia Missourian, Columbia, MO
+Assistant City Editor, State Government (January 2025 – May 2025), 15 hours/week
+Assigned and edited “general assignment” stories during two weekly shifts to enhance students’ ability to find sources,
+perform research, and write on deadline.
+Led a team of 15 state government reporters, assigning and editing multimedia stories to ensure accurate and comprehensive coverage.
+Created an AI-powered database of government spending complaints obtained through a public information request.
+
+Dubuque Telegraph-Herald Dubuque, IA
+Reporting Intern (Summer 2024), 40 hours/week
+Wrote 86 breaking news and enterprise stories on topics ranging from county fairs to health care.
+
+Kansas City Star Jefferson City, MO
+Legislative Reporting Intern (February 2024 – May 2024), 15 hours/week
+Contributed to breaking political news stories with an eye for how new policies impact people and communities.
+
+Volunteerism:
+Tiger Pantry and Truman’s Closet Columbia, MO
+Director of Operations (May 2024 – May 2025), 8 hours/week
+Oversaw three weekly food pantry shifts, supervising six shift ambassadors, 35 regular volunteers and 80 one-time
+volunteers to serve 900+ unique patrons.
+Co-directed ordering and stocking to ensure the pantry regularly offered more than 300 kinds of nutritious and
+culturally appropriate food items.
+
+Skills and Interests:
+Proficient in Python, R, C# and HTML. Fan of Joan Didion books, running half marathons and walking my cat Norman
+(he’s newly leash trained!)" id="mainresume">
+
+</main>
+</div>
+
+<footer>
+	<p class="footer">Website by Anna Sago</p>
+</footer>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("pages");
+  const btn  = document.getElementById('barmenu');
+  menu.classList.toggle("show");
+  document.getElementById('barmenu').addEventListener('click', toggleMenu);
+}
+</script>
+</body>
+</html>

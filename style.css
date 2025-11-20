@@ -1,0 +1,611 @@
+/* REMINDER: this makes every element follow the border-box attribute 
+so our heights and widths in the style sheet are the sizes for the whole element */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* REMINDER: this removes all default browser margins and padding */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* The rules above fully reset our document so we don't need to worry about math */
+
+html, body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+#masthead{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#masthead h1{
+	text-align: center; 
+	font-family: Garamond, serif; 
+	font-style: italic; 
+	font-size: 50px;
+}
+
+#barmenu {
+	display: none;
+}
+
+main{
+	flex: 1;
+	margin: 10px;
+}
+
+#aboutme{
+		display: block;
+		text-align: center;
+		padding: 10px;
+		font-size: 20px;
+	}
+
+
+.navbar ul {
+	list-style-type: none;
+	background-color: black;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	padding:0;
+	margin: 0;
+}
+
+
+.navbar a {
+	color: white;
+	text-decoration: none;
+	padding: 20px;
+	display: block;
+	text-align: center;
+}
+
+.navbar a:hover {
+	background-color: lightsteelblue;
+}
+
+.navbar li{
+	flex: 1 1 0;
+	max-width:12rem;
+	white-space: nowrap;
+}
+
+
+body {
+  background-color: white;
+}
+
+
+#bioandpic{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.references{
+	text-align: center;
+}
+
+.button{
+	background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+	background-color: lightsteelblue;
+}
+
+
+#resume{
+	display: block;
+	margin: auto;
+}
+
+#headshot {
+  display: flex;
+  width: 25%;
+  min-width: 120px;
+  padding: 20px;
+  border-radius: 50%;
+  align-content: left;
+  margin-right: 20px;
+}
+
+#biotext{
+	min-width: 260px;
+	font-family: Garamond, serif;
+	font-size: 30px;
+}
+
+#textone{
+	margin-bottom: 10px;
+}
+
+#hideonmobile{
+	font-family: Garamond, serif;
+	font-size: 30px;
+	display: block;
+}
+
+
+.photogrid{
+	padding: 40px;
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 40px;
+	box-sizing: border-box;
+
+}
+.photoanddescrip{
+	flex: 1 1 calc(33.333% - 40px);
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	aspect-ratio: 1 / 1;
+	box-sizing: border-box;
+	background-color: lightgrey;
+	padding: 10px;
+	text-align: center;
+}
+
+.regularpic{
+	border-style: solid;
+	height: 340px;
+	width: 340px;
+
+}
+
+
+.caption{
+	font-family: "Noto Serif", serif;
+	font-size: 30px;
+	margin: 10px;
+	align-content: center;
+}
+
+
+.bodycopy{
+	font-family: "Noto Sans", sans-serif;
+	font-size: 20px;
+	margin: 10px;
+	align-content: center;
+}
+
+.testimonials{
+	font-family: Garamond, serif;
+	font-size: 15px;
+	margin: 10px;
+	align-content: center;
+}
+
+.homefeatures{
+	display: flex;
+	align-items: flex-start;
+	gap: 32px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+.workfeat{
+	flex: 0 0 600px;
+}
+
+/* adapted from mdahnafarshad on GitHub*/
+
+
+.Slider{
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px;
+  padding: 30px;
+  width: 360px;
+  height: 400px;
+}
+
+.slide{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+#slider-caption{
+	font-family: Garamond, serif;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.Slider img{       
+  width: 100%;
+  height: 100%;;
+}
+
+#slider1title {
+	font-family: Garamond, serif;
+	font-size: 20px;
+	line-height: 1.4;
+	margin-top: 50px;
+  text-align: center;
+
+}
+
+.content2{
+  flex: 1;
+  width: 100%;
+  max-width: 400px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.slide2{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.content2 img{       
+  width: 100%;
+  height: 100%;;
+}
+
+.headline{
+	margin: 30px;
+	font-size: 40px;
+	font-family: "Noto Serif", serif;
+
+}
+
+.content2 bodycopy {
+	margin-left: 30px;
+}
+
+#slider2title{
+
+}
+
+.resumefeat{
+	margin: 0;
+	flex: 1;
+	width: 360px;
+}
+
+#resume{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+#mainresume{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contentbox{
+	display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  padding: 50px 20px;
+  margin-top: 20px;
+  background-color: lightsteelblue;
+}
+
+.content1 {
+	flex: 1.2;
+  font-family: Garamond, serif;
+  line-height: 1.6;
+}
+
+.python{
+	display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  height: 550px;
+  padding: 50px 20px;
+  margin: 20px;
+  background-color: lightsteelblue;
+}
+
+#pythoncopy {
+	flex: 1.2;
+  font-family: Garamond, serif;
+  line-height: 1.6;
+}
+
+.pythonphotos{
+	flex: 1;
+	width: 100%;
+  max-width: 400px;
+  min-width: 200px;
+}
+
+.pythonphotos img{
+	width: 100%;
+	height: auto;
+	display: block;
+
+}
+
+.footer{
+	text-align: center;
+	margin: 20px;
+	font-family: Garamond, serif;
+	font-style: italic; 
+
+}
+
+.contactform{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: lightsteelblue;
+	border: 2px black;
+	border-radius: 10px;
+	font-family: "Noto Sans", sans-serif;
+	margin: 50px auto;
+	max-width: 600px;
+}
+
+.form{
+	margin: 20px;
+}
+
+.form label{
+	width: 100%;
+	text-align: left;
+}
+
+.contactform input,
+.contactform textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1.5px black;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form button {
+  background-color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-color: black;
+}
+
+.form button {
+}
+
+
+@media (max-width:1200px){
+
+}
+
+
+
+
+@media (max-width: 1100px){
+
+.homefeatures{
+	display: block;
+	padding: 0 12px;
+}
+
+.workfeat{
+	flex: none;
+	width: 100%;
+}
+
+.resumefeat{
+	display: none;
+}
+
+#bioandpic{
+  margin-top: 50px;
+  padding: 12px;
+}
+
+}
+
+@media (max-width: 1000px){
+
+  .contentbox {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .content1 {
+    flex: none;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px;
+  }
+
+  .content2 {
+    flex: none;
+    width: 100%;
+    max-width: 500px;
+}
+
+}
+
+
+
+
+
+@media (max-width: 800px){
+	#aboutme{
+	display: none;
+}
+
+.photoanddescrip{
+	flex: 1 1 calc(50% - 40px);
+}
+
+
+.homefeatures{
+	display: block;
+	padding: 0 12px;
+}
+
+.workfeat{
+	flex: none;
+	width: 100%;
+}
+
+.resumefeat{
+	display: none;
+}
+
+}
+
+
+
+
+
+
+@media (max-width: 700px){
+	#aboutme{
+	display: none;
+}
+	.navbar ul{ display: none;}
+
+	.navbar ul.show {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+#barmenu {
+	display: block;
+	font-size: 50px;
+}
+
+#bioandpic{
+  border: 5px solid black;
+  padding: 12px;
+  justify-content: flex-start;
+  max-width: 90vw;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.photogrid{
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: flex-start;
+	gap: 24px;
+}
+
+.photoanddescrip {
+    width: 100%;
+    max-width: 720px; 
+    margin-inline: auto;
+    padding: 20px;
+  }
+
+#headshot {
+  width: 25%;
+  min-width: 150px;
+  height: auto;
+  flex-shrink: 0;
+  padding: 20px;
+  border-radius: 50%;
+  align-content: left;
+  margin-right: 20px;
+}
+
+#biotext{
+	min-width: 200px;
+	font-family: Garamond, serif;
+	font-size: 30px;
+	flex: 1;
+}
+
+#hideonmobile {
+    display: none;
+  }
+
+.homefeatures{
+	display: block;
+	padding: 0 12px;
+}
+
+.workfeat{
+	flex: none;
+	width: 100%;
+}
+
+.resumefeat{
+	display: none;
+}
+
+}
+
+
+
+#contentarea{
+	display: flex;
+	justify-content: center;
+}
+
+
+
+
+
+.bodycopy {
+	line-height: 1.6;
+	margin-bottom: 10px;
+}
+
+.mapcaption{
+
+}
+

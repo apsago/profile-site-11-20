@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My website</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<header>
+<div id="masthead">
+		<h1>  •  Anna Sago  • </h1>
+		<div id="barmenu" onclick="toggleMenu()">&#9776;</div>
+	</div>
+	<h2 id="aboutme">Journalist • Prospective Law Student</h2>
+	<nav class="navbar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="articles.html">Articles</a></li>
+			<li><a href="codingprojects.html">Coding Projects</a></li>
+			<li><a href="resume.html">Resume</a></li>
+			<li><a href="otherexperience.html">Other Experience</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<section class="contentbox">
+	<div class="content1">
+	<h2 class="headline">Python Projects</h2>
+	<p class="bodycopy">I am definitely still learning Python, but I've worked on about 12 Python projects so far and would consider it my "primary" coding language. Some of my favorite projects include a ML multiple linear regression classifier and a web scraper (in progress). You can see what I'm working on now on my GitHub page. <br><br>
+
+	I am mainly interested in learning more about Python (and other coding languages!) for research and journalism.</p>
+	</div>
+	<section class="content2">
+		<img src="python.png" alt="a Python script" id="pythonphoto1">
+	</section>
+  </section>
+
+
+	<section class="contentbox">
+	<div class="content1">
+	<h2 class="headline">Other languages</h2>
+	<p class="bodycopy">I have also worked with R, HTML/CSS, and C#, and briefly with mapping tools like QGIS and Leaflet.<br><br>
+
+	One recent project of mine was a map I created to visualize Missouri's 2025 Congressional redistricting. I joined a dataset of block-level district assignments with Census Shapefiles to create a starter map, then used QGIS to dissolve block level boundaries and put the map into Leaflet.
+
+	</p>
+	</div>
+
+<section class="content2">
+		<iframe width = "100%" height="315"
+    src="https://apsago.github.io/Missouri2025RedistrictingLeafletMap2/"
+    title="Missouri's new congressional map splits Kansas City into three districts."
+  id="mapimage"></iframe>
+  <p>Source: U.S. Census Bureau. Basemap © OpenStreetMap contributors.</p>
+	</section>
+</section>
+
+
+
+
+
+
+
+
+
+</main>
+
+
+<footer>
+	<p class="footer">Website by Anna Sago</p>
+</footer>
+<script src="GitHubPinner.js"></script>
+</body>
+</html>
